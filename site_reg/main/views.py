@@ -11,7 +11,7 @@ def index(request):
 
 
 def register(request):
-    return render(request, 'main/reg.html', {'reg_title': 'Регистрация'})
+    return render(request, 'main/reg.html', {'reg_title': 'Регистрация', 'button_reset': 'Reset'})
 
 
 def login(request):

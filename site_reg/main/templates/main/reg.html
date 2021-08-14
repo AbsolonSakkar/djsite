@@ -14,11 +14,12 @@
             <div class="header">
                  <div class="reg__block">
                      <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit"></button>
-                </form>
-                </div>
+                     {% csrf_token %}
+                     {{ form.as_p }}
+                     <button type="submit"></button>
+                     <button><input type="reset" value="Button">Reset</button>
+                 </form>
+                 </div>
             </div>
         </div>
     </body>

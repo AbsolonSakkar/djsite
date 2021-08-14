@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-class User(models.Model):
-    username = models.OneToOneField(max_length=30)
+class User(AbstractUser):
+    username = models.CharField(max_length=30, unique=True)
     password = models.CharField(max_length=30)
     password1 = models.CharField(max_length=30)
 
